@@ -18,18 +18,6 @@
   <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.21/jquery.csv.js"
     type="text/javascript">
 
-  <meta name="description" content="Computer Science PhD Stipend Rankings">
-  <meta name="keywords"
-    content="computer science rankings, best computer science programs, best computer science schools, top computer science schools, top computer science universities, best computer science programs">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="citation_title" content="CSRankings">
-  <meta name="citation_author" content="Berger, Emery D.">
-  <meta name="citation_publication_date" content="2020">
-  <meta name="citation_fulltext_html_url" content="https://csrankings.org">
-  <meta name="citation_publisher" content="">
-  <meta name="citation_fulltext_world_readable" content="">
-
   <link rel="stylesheet" href="css/csrankings.css">
   <link rel="stylesheet" href="css/csrankings-extra.css">
 
@@ -257,10 +245,11 @@
                 <li><span class="areaname systems-area">summer-gtd</span>, indicating summer funding is guaranteed in this department.</li>
                 <li><span class="areaname systems-area">varies</span>, indicating the amount of funding varies from advisor to advisor in this department.</li>
                 <li><span class="areaname" style="color:red">no-guarantee</span>, indicating this department does not guarantee any funding at all.</li>
-                <li><span class="iconify" data-icon="material-symbols:verified-rounded" style="color: #a9a9a9;"></span>, indicating the stipend is verified for the semester time, but not for the summer.
-                  This icon is clickable and linked to the document used in verification.
+                <li><span class="areaname" style="color:red">striking</span>, indicating this department is currently under a strike.</li>
+                <li><span class="iconify" data-icon="material-symbols:verified-rounded" style="color: #a9a9a9;"></span>, indicating the stipend is verified for the semesters, but not for the summer.
+                  This icon also serves as a hyperlink to the document used for verification, if the document is uploaded to a publicly accessible location, such as GitHub issues.
                 </li>
-                <li><span class="iconify" data-icon="material-symbols:verified-rounded" style="color: #0197f6;"></span>, indicating the stipend is verified for 12 months. Similarly, it is linked to the document used in verification.
+                <li><span class="iconify" data-icon="material-symbols:verified-rounded" style="color: #0197f6;"></span>, indicating the stipend is verified for 12 months. Similarly, it may be a hyperlink to the document used in verification.
                 <li><span class="iconify" data-icon="icon-park-solid:file-question" style="color: #960018;"></span>, indicating we have a survey for this department. If you are a PhD student at this department,
 			please click the icon to fill it.</li>
                 </li>
@@ -290,7 +279,9 @@
                     <option value="public">Public</option>
                   </optgroup>
                 </select>
-                Private schools in 🟪. Public schools in 🟩. Fellowships in 🟦.
+                Private schools in <span class="iconify" data-icon="bi:square-fill" style="color:purple"></span>.
+                Public schools in <span class="iconify" data-icon="bi:square-fill" style="color:green"></span>.
+                Fellowships in <span class="iconify" data-icon="bi:square-fill" style="color:blue"></span>.
                 <br>
                 <!-- <input type="checkbox" id="living-wage" checked>
                 <label for="living-wage"> Rank after subtracting non-reimbursable fees and local living cost</label><br> -->
@@ -421,6 +412,8 @@
               Google Form</a>.
             Also, feel free to submit <a
               href="https://github.com/CSStipendRankings/CSStipendRankings/issues/new/choose" target="_blank">issues on GitHub</a>.
+            We encourage submitting datapoints through issues due to its ability to facilitate public discussion. Additionally,
+            it provides the advantage of creating a hyperlink on the checkmark that directs to the corresponding issue.
           </p>
           <p>
             <b>Frequent-Asked Questions:</b> Please see FAQs <a href="/faq.html" target="_blank">here</a>.
