@@ -264,7 +264,11 @@ function sort_on_column(col, desc_or_asc) {
                 if (!first) namefix2.append(",")
                 namefix2.append($("<span>").text("summer-gtd").attr("class", "areaname systems-area"))
                 first = false;
-	        } else if (labels[k] == "varies") {
+	          } else if (labels[k] == "summer-no-gtd") {
+                if (!first) namefix2.append(",")
+                namefix2.append($("<span>").text("summer-no-gtd").attr("class", "areaname").attr("style", "color:red"))
+                first = false;
+            } else if (labels[k] == "varies") {
                 if (!first) namefix2.append(",")
                 namefix2.append($("<span>").text("varies").attr("class", "areaname systems-area"))
                 first = false;
@@ -276,7 +280,11 @@ function sort_on_column(col, desc_or_asc) {
                 if (!first) namefix2.append(",")
                 namefix2.append($("<span>").text("no-guarantee").attr("class", "areaname").attr("style", "color:red"))
                 first = false;
-            }
+            } else if (labels[k] == "cpt-fee") {
+                if (!first) namefix2.append(",")
+                namefix2.append($("<span>").text("cpt-fee").attr("class", "areaname").attr("style", "color:red"))
+                first = false;
+	    }
 
             if (labels[k].includes("survey")) {
                 survey_link = labels[k].split("=")[1]

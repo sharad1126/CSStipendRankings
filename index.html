@@ -227,6 +227,7 @@
               CSStipendRankings is a stipend-based ranking of top-paying computer science departments in US.
               We may implement support for other countries and you are welcomed to contribute!
               For a real academic ranking, please refer to <a href="https://csrankings.org/" target="_blank">CSRankings</a>.
+              For reviewing individual PhD advisors, please refer to <a href="https://pi-review.com" target="_blank">PI Review</a>.
             </p>
             <p>
             <ul>
@@ -236,7 +237,7 @@
                 <br>Note that <b>some departments do not have guaranteed summer funding</b>, and we are currently
                 working to collect such data. For now, this data is not complete.
               </li>
-              <li>Fees are annual non-reimbursible tariffs (including health insurance) reclaimed by said institution. <b>See why health insurance is included in <a href="/faq.html#:~:text=Why is health insurance included in fees?" target="_blank">here.</a></b></li>
+              <li>Fees are annual non-reimbursible tariffs (including health insurance) reclaimed by said institution. <b>See why health insurance is included in <a href="/faq.html#:~:text=Why is health insurance included in fees?" target="_blank">here.</a></b> If the institution charges a CPT fee or summer enrollment fee for international students, they should also be counted here. <b>In short, this should be the maximum possible fee that the institution charges.</b></li>
               <li>Living cost is calculated based on the <a href="https://livingwage.mit.edu/" target="_blank">MIT Living Wage
                   Calculator </a> for the institution's city. <b>See why we use this calculator and its limitations in <a href="/faq.html#:~:text=Why MIT Living Cost Calculator?" target="_blank">here</a></b>.</li>
             </ul>
@@ -244,7 +245,8 @@
               <ul>
                 <li><span class="areaname systems-area">summer-gtd</span>, indicating summer funding is guaranteed in this department.</li>
                 <li><span class="areaname systems-area">varies</span>, indicating the amount of funding varies from advisor to advisor in this department.</li>
-                <li><span class="areaname" style="color:red">no-guarantee</span>, indicating this department does not guarantee any funding at all.</li>
+                <li><span class="areaname" style="color:red">no-guarantee</span>, indicating this department does not guarantee any funding at all (at least for a subset of its enrolled PhD students, where a PhD student is defined as a graduate student who is required to conduct research under an advisor to graduate and get a degree). <b>Anyone who can prove this is welcomed and encouraged to submit an issue, and we will add this label immediately. See the reason <a href="/faq.html#no-guarantee">here</a>.</b></li>
+                <li><span class="areaname" style="color:red">cpt-fee</span>, indicating international students in this department need to pay a fee for their CPT applications.</li>
                 <li><span class="areaname" style="color:red">striking</span>, indicating this department is currently under a strike.</li>
                 <li><span class="iconify" data-icon="material-symbols:verified-rounded" style="color: #a9a9a9;"></span>, indicating the stipend is verified for the semesters, but not for the summer.
                   This icon also serves as a hyperlink to the document used for verification, if the document is uploaded to a publicly accessible location, such as GitHub issues.
@@ -408,12 +410,11 @@
           <p>
             <b>Contributing:</b> Everyone is welcomed to submit patches or report the stipend via <a
               href="https://github.com/CSStipendRankings/CSStipendRankings/pulls" target="_blank">pull requests</a>.
-            Another option to submit valuable datapoints is through <a href="https://forms.gle/fmF3EjiWxMQdoqhR9" target="_blank">this
-              Google Form</a>.
             Also, feel free to submit <a
               href="https://github.com/CSStipendRankings/CSStipendRankings/issues/new/choose" target="_blank">issues on GitHub</a>.
             We encourage submitting datapoints through issues due to its ability to facilitate public discussion. Additionally,
-            it provides the advantage of creating a hyperlink on the checkmark that directs to the corresponding issue.
+            it provides the advantage of creating a hyperlink on the checkmark that directs to the corresponding issue. In most cases, we will respond
+            to a submitted issue within a few days.
           </p>
           <p>
             <b>Frequent-Asked Questions:</b> Please see FAQs <a href="/faq.html" target="_blank">here</a>.
